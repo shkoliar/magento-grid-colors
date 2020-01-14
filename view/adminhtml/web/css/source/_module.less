@@ -1,0 +1,142 @@
+//
+//  UI -> Data Grid -> Header -> Action Colors
+//  _____________________________________________
+
+//
+//  Variables
+//  ---------------------------------------------
+
+@shkoliar-grid-colors-icon-font-path: '@{baseDir}Shkoliar_GridColors/fonts/ShkoliarGridColors';
+@shkoliar-grid-colors-icon-font-name: 'ShkoliarGridColors';
+
+@data-grid-action-colors-menu__padding-horizontal: 3.5rem;
+
+@data-grid-action-colors-menu-item__column: 2;
+@data-grid-action-colors-menu-item__margin-bottom: 1.5rem;
+@data-grid-action-colors-menu-item__width: 23.7rem;
+
+//
+//  Fonts
+//  ---------------------------------------------
+
+.lib-font-face (
+    @family-name: @shkoliar-grid-colors-icon-font-name,
+    @font-path: @shkoliar-grid-colors-icon-font-path,
+    @font-weight: normal,
+    @font-style: normal
+);
+
+//
+//  Styles
+//  ---------------------------------------------
+
+.data-grid > tbody {
+    >tr + tr {
+        &._grid-colors {
+            border-top: 0.1rem solid @color-gray84;
+        }
+    }
+
+    >tr:not(:hover) {
+        &._grid-colors {
+            >td{
+                background-color: transparent;
+            }
+        }
+    }
+}
+
+.admin__data-grid-action-colors {
+    &._active {
+        opacity: @component-modal__opacity;
+        z-index: @data-grid-action__z-index;
+    }
+
+    .admin__action-dropdown {
+        &:before {
+            &:extend(.abs-icon all);
+            font-family: @shkoliar-grid-colors-icon-font-name;
+            content: "\e4551";
+            font-size: 1.8rem; // Static
+            margin-right: @action__outer-indent;
+            vertical-align: top;
+        }
+    }
+}
+
+.admin__data-grid-action-colors-menu {
+    color: @color-very-dark-gray-black;
+    font-size: 1.3rem;
+    overflow: hidden;
+    padding: 2.2rem @data-grid-action-colors-menu__padding-horizontal 1rem;
+    z-index: 1;
+
+    .admin__action-dropdown-menu-content {
+        &:extend(.abs-clearfix all);
+        max-height: 25rem;
+        overflow-y: auto;
+        padding: 1.5rem 0 0.5rem;
+        position: relative;
+        width: @data-grid-action-colors-menu-item__width * @data-grid-action-colors-menu-item__column;
+    }
+
+    &._empty {
+        .admin__action-dropdown-menu-header {
+            border-bottom: none;
+        }
+
+        .admin__action-dropdown-menu-footer {
+            display: none;
+        }
+    }
+
+    .admin__form-field-label {
+        .lib-text-overflow-ellipsis();
+        display: block;
+    }
+
+    .admin__field-option {
+        float: left;
+        margin-bottom: @data-grid-action-colors-menu-item__margin-bottom;
+        padding: 0 1rem 0 0;
+        width: @data-grid-action-colors-menu-item__width;
+
+        .colorpicker-input {
+            width: auto !important;
+        }
+    }
+
+    .admin__action-dropdown-menu-header {
+        border-bottom: 1px solid @border-color__base;
+        padding-bottom: 1.5rem;
+
+        .admin__form-field-label {
+            margin-bottom: 0.5rem;
+            font-size: 1.4rem;
+            line-height: 1.46;
+        }
+
+        .admin__action-grid-select {
+            display: block;
+
+            select {
+                width: 100%;
+            }
+        }
+    }
+
+    .admin__action-dropdown-menu-footer {
+        border-top: 1px solid @border-color__base;
+        padding: 1.5rem 0 2rem;
+    }
+
+    .admin__action-dropdown-footer-main-actions {
+        margin-left: 25%;
+        text-align: right;
+    }
+
+    .admin__action-dropdown-footer-secondary-actions {
+        float: left;
+        margin-left: -@button__padding-horizontal;
+    }
+}

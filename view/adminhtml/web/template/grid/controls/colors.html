@@ -1,0 +1,22 @@
+<div class="admin__action-dropdown-wrap admin__data-grid-action-colors" visible="hasColors()" collapsible>
+    <button class="admin__action-dropdown" type="button" toggleCollapsible>
+        <span class="admin__action-dropdown-text" translate="'Colors'"/>
+    </button>
+    <div class="admin__action-dropdown-menu admin__data-grid-action-colors-menu" css="_empty: !hasColorsVisible()">
+        <div class="admin__action-dropdown-menu-header">
+            <div class="admin__action-dropdown-wrap admin__action-grid-select" outereach="getSelect()"
+                 render=""/>
+        </div>
+        <div class="admin__action-dropdown-menu-content">
+            <div class="admin__field-option" outereach="getColors()" visible="$parent.isColorVisible($data)" render=""/>
+        </div>
+        <div class="admin__action-dropdown-menu-footer">
+            <div class="admin__action-dropdown-footer-secondary-actions">
+                <button class="action-tertiary" type="button" click="reset" translate="'Reset'"/>
+            </div>
+            <div class="admin__action-dropdown-footer-main-actions">
+                <button class="action-tertiary" type="button" click="cancel" translate="'Cancel'" closeCollapsible/>
+            </div>
+        </div>
+    </div>
+</div>

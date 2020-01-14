@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * GridColors
+ *
+ * @copyright Copyright © 2020 Dmitry Shkoliar. All rights reserved.
+ * @author    Dmitry Shkoliar
+ * @website   shkoliar.com
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="Shkoliar_GridColors" setup_version="1.0.0" />
+</config>

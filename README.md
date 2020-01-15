@@ -6,7 +6,7 @@ The module adds extra coloring features to admin grids at the `Sales` section. W
 
 ## Demo
 
-Click to watch the youtube video. `Cmd` + `Click` for macOS or `Crtl` + `Click` for Windows to open video in a new tab.
+Click on the image to watch the youtube video. <kbd>Cmd + Click</kbd> for macOS or <kbd>Crtl + Click</kbd> for Windows to open video in a new tab.
 
 [![Watch the video](https://img.youtube.com/vi/eJ1ZgUQ_S4U/maxresdefault.jpg)](https://youtu.be/eJ1ZgUQ_S4U)
 

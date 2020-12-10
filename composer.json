@@ -2,7 +2,7 @@
   "name": "shkoliar/magento-grid-colors",
   "description": "Magento 2 module for colorizing admin grids. Supports saving of states with the help of grid's bookmarks.",
   "require": {
-    "magento/framework": "~100.1.0|~101.0.0|~102.0.0"
+    "magento/framework": "~100.1.0|~101.0.0|~102.0.0|~103.0.0"
   },
   "type": "magento2-module",
   "license": [

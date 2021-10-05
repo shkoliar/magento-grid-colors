@@ -1,7 +1,7 @@
 /**
  * GridColors
  *
- * @copyright Copyright © 2020 Dmitry Shkoliar. All rights reserved.
+ * @copyright Copyright © 2021 Dmitry Shkoliar. All rights reserved.
  * @author    Dmitry Shkoliar
  * @website   shkoliar.com
  */
